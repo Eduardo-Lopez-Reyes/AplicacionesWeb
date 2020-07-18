@@ -1,0 +1,114 @@
+  <!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="utf-8">
+      <title> Formulario (API DOM)</title>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+          <div class="row">
+            <article class="col s8 offset-s2 card-panel grey lighten-3">
+              <form class="col s12">
+                <div class="row">
+                  <div class="grey lighten-3"><h6 >Welcome, pleace registrer</h6></div>
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">account_box</i>
+                    <input type="text" name="txtFirstName" id="txtFirstName" required="" class="validate">
+                    <label for="txtFirstName">First Name</label>
+                  </div>
+                   <div class="input-field col s6">
+                    <input type="text" name="txtLastName" id="txtLastName" required="" class="validate">
+                    <label for="txtLastName">Last Name</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix" >email</i>
+                    <input type="email" name="txtEmail" id="txtEmail" required="" class="validate">
+                    <label for="txtEmail">Email</label>
+                    <samp class="heper-text" data-error="Mail invalid, example@mail.com" data-success="Mail valid">example@mail.com</samp>
+                  </div>
+                 <div class="input-field col s6">
+                   <i class="material-icons prefix">lock</i>
+                   <input type="password" name="txtPassword" id="txtPassword" required="" class="validate">
+                   <label for="txtPassword">Password</label>
+                 </div>
+                 <div class="input-field col s6">
+                   <input type="password" name="txtPassword2" id="txtPassword2" required="" class="validate">
+                   <label for="txtPassword2">Confirm Password</label>
+                 </div>
+                 <div>
+                   <div class="divider"></div>
+                   <div class="row">
+                     <div class="input-field col s12">
+                     <select id="lstGenero">
+                        <option value="" disabled="" selected="">Choose your option</option>
+                        <option value="F">Female</option>
+                        <option value="M">Male</option>
+                        <option value="Oth">Other</option>
+                    </select>
+                    <label>Genere</label>
+                    </div>
+                   </div>
+                 </div>
+                 <div class="divider"></div>
+                 <div class="row">
+                  <div class="input-field col s12">
+                    <p>
+                      <label>
+                        <input type="radio" name="rdoColor" value="Amarillo">
+                        <span>Amarillo</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="radio" name="rdoColor" value="Verde">
+                        <span>Verde</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="radio" name="rdoColor" value="Rojo">
+                        <span>Rojo</span>
+                      </label>
+                    </p>
+                  </div>
+                 </div>
+                 <div class="divider"></div>
+                 <div class="row">
+                   <div class="input-field col s12">
+                     <p>
+                       <label>
+                         <input type="checkbox" name="chkUno" id="chkUno" value="Uno">
+                         <span>Uno</span>
+                       </label>
+                     </p>
+                     <p>
+                       <label>
+                         <input type="checkbox" name="chkDos" id="chkDos" value="Dos">
+                         <span>Dos</span>
+                       </label>
+                     </p>
+                   </div>
+                 </div>
+                 <div class="row">
+                  <div class="col s12">
+                    <button type="button" class="waves-effect waves-light btn light-blue accert-2 white-text col s12" id="btnRegister">Register</button>
+                  </div>
+                 </div>  
+              </form>
+            </article>
+          </div>
+          
+        </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/script_form_dom.js"></script>
+    </body>
+  </html>

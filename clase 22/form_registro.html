@@ -1,0 +1,102 @@
+  <!DOCTYPE html>
+  <html lang="us">
+    <head>
+      <meta charset="utf-8">
+      <title> Formulario de registro</title>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="css/estilo_form_registro.css">
+
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="row">
+          <article class="col s10 offset-s1 card-panel">
+            <form class="col s12">
+              <h5>Registration form</h5>
+              <div class="row">
+                <div class="input-field">
+                  <i class="material-icons prefix">account_box</i>
+                  <input type="text" name="txtUserName" id="txtUserName" required="" class="validate">
+                  <label for="txtUserName">User Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" name="txtEmail" id="txtEmail" required="" class="validate">
+                  <label for="txtEmail">Email</label>
+                  <samp class="helper-text" data-error="Mail invalid, example: mail@example.com" data-success="Mail valid">mail@example.com</samp>
+                </div>
+                <div class="input-field col s6">
+                  <input type="email" name="txtEmail2" id="txtEmail2" required="" class="validate">
+                  <label for="txtEmail2">Confirm email</label>
+                  <samp class="helper-text" data-error="Mail invalid, example: mail@example.com" data-success="Mail valid">mail@example.com</samp>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">lock_open</i>
+                  <input type="password" name="txtPassword" id="txtPassword" required="" class="validatev">
+                  <label for="txtPassword">Password</label>
+                </div>
+                <div class="input-field col s6">
+                  <input type="password" name="txtPassword2" id="txtPassword2" required="" class="validatev">
+                  <label for="txtPassword2">Confirm password</label>
+                </div>
+              </div><!--Finaliza la primera fila del(.row) del formulario -->
+              <h5>Personal details</h5>
+              <div class="divider"></div>
+              <div class="row">
+                <div class="input-field col s6">
+                  <input type="text" name="txtFirstName" id="txtFirstName" required="" class="validate">
+                  <label for="txtFirstName">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input type="text" name="txtLastName" id="txtLastName" required="" class="validate">
+                  <label for="txtLastName">Last Name</label>
+                </div>
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled="" selected="">Choose your option</option>
+                    <option value="F">Female</option>
+                    <option value="M">Male</option>
+                    <option value="Oth">Other</option>
+                  </select>
+                  <label>Genere</label>
+                </div>
+                <div class="input-field">
+                  <p>
+                    <label>
+                      <input type="checkbox" name="chkOffers" id="chkOffers">
+                      <span>I want to recive news and special offers</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input type="checkbox" name="chkTerms" id="chkTerms" required="">
+                      <span>A agree width the Term an Conditions</span>
+                    </label>
+                  </p>
+                </div>
+              </div><!--Finaliza la segunda fila del(.row) del formulario -->
+              <div class="divider"></div>
+              <div class="row">
+                <div class="col s4 offset-s8">
+                   <button type="submit" class="waves-effect waves-light btn">SUBMIT<i class="material-icons right ">send</i></button>
+                </div>
+              </div>
+            </form>
+          </article>
+        </div>   
+      </div>    
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/script_form_registro.js"></script>
+      
+    </body>
+  </html>
